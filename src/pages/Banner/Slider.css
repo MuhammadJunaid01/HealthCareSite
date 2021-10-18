@@ -1,0 +1,43 @@
+.caru-img {
+  height: 500px;
+}
+.mainBtn-cont {
+  display: flex;
+  justify-content: space-around;
+}
+.banner-btn {
+  background-image: linear-gradient(to left, orange, tomato);
+  /* border: none;
+  outline: none; */
+  color: black;
+}
+.health {
+  font-size: 50px;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 10px;
+}
+.priority {
+  font-size: 45px;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 10px;
+}
+
+@media (min-width: 305px) and (max-width: 660px) {
+  .mainBtn-cont {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .health {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .priority {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .banner-btn {
+    width: 100%;
+  }
+}

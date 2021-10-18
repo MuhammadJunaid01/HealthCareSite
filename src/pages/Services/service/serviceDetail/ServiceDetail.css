@@ -1,0 +1,21 @@
+.serviceDetail {
+  padding: 50px;
+  background-color: gainsboro;
+}
+.details-btn {
+  width: 100%;
+  margin-top: 6px;
+}
+.detail-right {
+  font-size: 18px;
+}
+.worksHour {
+  background-color: brown;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+}
+.mond {
+  display: flex;
+  justify-content: space-between;
+}

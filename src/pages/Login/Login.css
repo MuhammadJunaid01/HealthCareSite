@@ -1,0 +1,11 @@
+.login-form {
+  padding: 30px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+.google-login {
+  text-align: center;
+}

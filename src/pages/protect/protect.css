@@ -1,0 +1,31 @@
+.protect-info {
+  text-align: center;
+  padding: 20px;
+}
+.protect {
+  padding: 70px;
+}
+.price {
+  color: #669900;
+  font-weight: 700;
+  font-size: 33px;
+}
+.price-cont {
+  font-size: 20px;
+}
+.text {
+  margin: 15px 0px;
+}
+.icons {
+  color: #669900;
+  margin-right: 7px;
+}
+
+@media (min-width: 305px) and (max-width: 660px) {
+  .protect-info {
+    padding: 10px 0px;
+  }
+  .protect {
+    padding: 4px;
+  }
+}

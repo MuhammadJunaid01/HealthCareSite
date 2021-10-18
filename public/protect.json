@@ -1,0 +1,41 @@
+[
+  {
+    "name": "TRIAL",
+    "info": "1 Cleaners",
+    "detail": "Floor Cleaning",
+    "facility": "2 Rooms",
+    "price": 5,
+    "text": "Free with 14 days trial, then you can choose plan",
+    "image": " https://cdn2.vectorstock.com/i/thumb-large/12/11/opened-notebook-vector-551211.jpg"
+  },
+  {
+    "name": "STANDARD",
+    "info": "3 Cleaners",
+    "price": 29,
+    "detail": "All House Cleaning",
+    "facility": "All Rooms",
+    "extra": "Equipment Cleaning",
+    "text": "Free with 14 days trial, then you can choose plan",
+
+    "image": " https://krify.co/wp-content/uploads/2019/01/Importance-types-of-healthcare-Facilities.jpg"
+  },
+  {
+    "name": "PREMIUM",
+    "info": "2 Cleaners",
+    "price": 59,
+    "detail": "Normal Clean",
+    "facility": "3 Rooms",
+    "text": "Free with 14 days trial, then you can choose plan",
+
+    "image": "https://thumbs.dreamstime.com/z/iv-blood-bag-vector-icon-illustration-iv-blood-bag-vector-icon-138483682.jpg"
+  },
+  {
+    "name": "ULTIMATE",
+    "info": "5 Cleaners",
+    "price": 99,
+    "text": "Free with 14 days trial, then you can choose plan",
+    "detail": "All Office Cleaning",
+    "facility": "All Rooms",
+    "image": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Dr. Taher",
+    "info": "Lorem ipsum dolor sit amet, consect adipisicing elit vero. Donec ultri sollicitudin lacus",
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=876&q=80"
+  },
+  {
+    "name": "Dr. Nazrul",
+    "id": 2,
+    "info": "Lorem ipsum dolor sit amet, consect adipisicing elit vero. Donec ultri sollicitudin lacus",
+    "image": "https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "name": "Dr. Siddik",
+    "id": 3,
+    "info": "Lorem ipsum dolor sit amet, consect adipisicing elit vero. Donec ultri sollicitudin lacus",
+    "image": "https://images.unsplash.com/photo-1582719471327-5bd41fcf7f7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+  },
+  {
+    "name": "Dr. Nazrul",
+    "id": 4,
+    "info": "Lorem ipsum dolor sit amet, consect adipisicing elit vero. Donec ultri sollicitudin lacus",
+    "image": "https://images.unsplash.com/photo-1591604021695-0c69b7c05981?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "name": "Dr. Siddik",
+    "id": 5,
+    "info": "Lorem ipsum dolor sit amet, consect adipisicing elit vero. Donec ultri sollicitudin lacus",
+    "image": "https://images.unsplash.com/photo-1590611936760-eeb9bc598548?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "name": "DEDICATED PATIENT CARE",
+    "id": 6,
+    "info": "Lorem ipsum dolor sit amet, consect adipisicing elit vero. Donec ultri sollicitudin lacus",
+    "image": "https://images.unsplash.com/photo-1574706473454-a3b3da3fc5b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
+  }
+]

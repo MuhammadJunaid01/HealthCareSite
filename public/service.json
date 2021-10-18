@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Psychiatry",
+    "info": "Lorem ispm dolor sit amaettum prahraph dolor sum",
+    "id": 1,
+    "image": "https://cdn4.vectorstock.com/i/1000x1000/66/78/mental-health-rounded-blue-icon-psychiatry-vector-30286678.jpg"
+  },
+  {
+    "name": "Opthalmology",
+    "id": 2,
+    "info": "Lorem ispm dolor sit amaettum prahraph dolor sum",
+    "image": "https://cdn1.iconfinder.com/data/icons/medical-specialties-1-3/380/Ophthalmology-512.png"
+  },
+  {
+    "name": "Cardiology",
+    "id": 3,
+    "info": "Lorem ispm dolor sit amaettum prahraph dolor sum",
+
+    "image": "https://cdn5.vectorstock.com/i/1000x1000/54/34/cardiology-icon-vector-38225434.jpg"
+  },
+  {
+    "name": "Immumnology",
+    "id": 4,
+    "info": "Lorem ispm dolor sit amaettum prahraph dolor sum",
+    "image": "https://image.shutterstock.com/image-vector/black-white-vector-spherical-virus-260nw-1281272254.jpg"
+  },
+  {
+    "name": "Hematology",
+    "id": 5,
+    "info": "Lorem ispm dolor sit amaettum prahraph dolor sum",
+    "image": "https://cdn1.iconfinder.com/data/icons/medical-specialties-2-3/380/Hematology-512.png"
+  },
+  {
+    "name": "Laboratory",
+    "id": 6,
+    "info": "Lorem ispm dolor sit amaettum prahraph dolor sum",
+    "image": "https://media.istockphoto.com/vectors/laboratory-icon-logo-vector-illustration-design-vector-id1169049745"
+  },
+  {
+    "name": "Oncology",
+    "id": 7,
+    "info": "Lorem ispm dolor sit amaettum prahraph dolor sum",
+    "image": "https://c8.alamy.com/comp/2CC5Y04/oncology-department-rgb-color-icon-2CC5Y04.jpg"
+  },
+  {
+    "name": "Dental",
+    "id": 8,
+    "info": "Lorem ispm dolor sit amaettum prahraph dolor sum",
+    "image": "https://image.shutterstock.com/image-vector/dental-filling-outline-vector-icon-260nw-1880582098.jpg"
+  }
+]

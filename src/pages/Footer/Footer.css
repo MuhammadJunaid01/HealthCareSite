@@ -1,0 +1,125 @@
+.footer-container {
+  background-color: rgba(137, 43, 226, 0.658);
+  color: white;
+  padding: 40px;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+
+  height: auto;
+  padding: 10px;
+}
+.footerInfo-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+.footerI-contuctnfo {
+  padding: 20px;
+}
+.footerI-contuctnfo i {
+  font-size: 30px;
+  margin-right: 7px;
+}
+.phone {
+  margin-left: 10px;
+}
+.footer-eamil {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer-eamil i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.contuct-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contuct-link i {
+  background-color: white;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.541);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+.school-details {
+  padding: 10px;
+}
+.learning {
+  padding: 10px;
+}
+.update {
+  padding: 10px;
+}
+.blogs {
+  text-decoration: none;
+  color: white;
+  margin-left: 6px;
+}
+
+@media (min-width: 305px) and (max-width: 660px) {
+  .footer-info {
+    display: block;
+    padding: 0px;
+    border: none;
+  }
+  .footer-container {
+    padding: 3px;
+  }
+  .footerInfo-icon {
+    text-align: center;
+    font-size: 40px;
+    border: none;
+    margin-top: 5px;
+  }
+  .footer-eamil {
+    padding: 0px;
+  }
+  .footer-info {
+    width: 100%;
+  }
+  .footerI-contuctnfo {
+    padding: 0px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footerI-contuctnfo i {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .phone {
+    /* text-align: center; */
+    /* color: red; */
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 57px;
+  }
+  .text {
+    /* text-align: center; */
+    width: 100%;
+  }
+  .contuct-link {
+    display: block;
+  }
+  .footer-eamil {
+    display: block;
+    text-align: center;
+    margin: 17px 0px;
+  }
+  .email {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .contuct-link {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}

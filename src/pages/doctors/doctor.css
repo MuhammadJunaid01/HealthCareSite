@@ -3,7 +3,7 @@
   transition: 3s ease-in-out;
 }
 .cards-body {
-  background-color: rgba(128, 128, 128, 0.562);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .read-btn {
   width: 40%;

@@ -17,7 +17,7 @@ const Doctor = (props) => {
               bulk of the card's content.
             </Card.Text>
             <Link to={`/readMore/${id}`}>
-              <Button variant="info" className="read-btn">
+              <Button variant="info" className="read-btn w-100">
                 Read More
               </Button>
             </Link>

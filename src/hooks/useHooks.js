@@ -8,6 +8,7 @@ import {
   createUserWithEmailAndPassword,
 } from "firebase/auth";
 import FirebaseAuthentication from "./../Firebase/firebaseinit/useFirebase";
+import { useHistory, useLocation } from "react-router";
 FirebaseAuthentication();
 const useHooks = () => {
   const [user, setUser] = useState({});
@@ -23,7 +24,7 @@ const useHooks = () => {
         const token = credential.accessToken;
         const currentUser = result.user;
         setUser(currentUser);
-        // console.log(user);
+        // history.push();
       })
       .catch((error) => {
         const errorCode = error.code;

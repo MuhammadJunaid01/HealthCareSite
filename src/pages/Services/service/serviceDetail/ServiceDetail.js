@@ -80,7 +80,7 @@ const ServiceDetail = () => {
               </div>
             </div>
           </Col>
-          <Col lg={4} md={4} sm={12}>
+          <Col className="bg-cols" lg={4} md={4} sm={12}>
             <div className="info-servicedetail">
               <div className="worksHour">
                 <h1 className="text-center">WORK HOURS</h1>
@@ -118,13 +118,35 @@ const ServiceDetail = () => {
               </div>
             </div>
           </Col>
-          <Col lg={8} md={8} sm={12}>
-            <p>
+          <Col className="bg-cols" lg={8} md={8} sm={12}>
+            <p className="text-muted">
               Meditex Clinics Department of Dental Specialties in Minnesota
               provides coordinated care for adults and children who require
               specialized dental care. Depending on the persons needs, care may
               include one specialty or more than one (multispecialty care, also
               called multidisciplinary care).
+            </p>
+            <p className="text-muted">
+              An attractive, healthy smile is an important part of life. Our
+              General Dentistry Department provides a broad range of services to
+              meet your family’s dental needs including:
+            </p>
+            <p className="text-muted">Preventive Dental Care:</p>
+            <p className="text-muted">
+              <i className="fas fa-hand-point-right icons"></i> Oral
+              Exam/Radiograph Study (mandatory at initial visit)
+            </p>
+            <p className="text-muted">
+              <i className="fas fa-hand-point-right icons"></i> Oral Periodontal
+              Scaling/Deep Cleaning
+            </p>
+            <p className="text-muted">
+              <i className="fas fa-hand-point-right icons"></i> Oral Dental care
+              for pregnant patients consists on evaluation and cleaning; mainly,
+            </p>
+            <p className="text-muted">
+              <i className="fas fa-hand-point-right icons"></i> Oral Restorative
+              Dentistry – Amalgam/Composite Fillings
             </p>
           </Col>
         </Row>

@@ -42,4 +42,13 @@
     border-radius: 4px;
     height: auto;
   }
+  .testi-info {
+    margin-bottom: 17px;
+    display: inline-block;
+  }
+  .info-text {
+    text-indent: 0px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 }

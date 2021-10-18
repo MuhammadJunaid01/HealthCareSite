@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Protects from "./pages/protect/Protects";
 import ServiceDetail from "./pages/Services/service/serviceDetail/ServiceDetail";
+import NotFound from "./pages/notFound/NotFound";
 function App() {
   return (
     <div>
@@ -42,6 +43,9 @@ function App() {
             </Route>
             <Route exat path="/login">
               <Login></Login>
+            </Route>
+            <Route exact path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>

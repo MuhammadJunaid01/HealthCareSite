@@ -6,7 +6,7 @@ const Protect = (props) => {
   const { detail, text, facility, info, name, price, extra } = props.protect;
   return (
     <div>
-      <Card>
+      <Card className="protect-card">
         <Card.Body>
           <Card.Title className="text-muted">{name}</Card.Title>
           <span className="price-cont">

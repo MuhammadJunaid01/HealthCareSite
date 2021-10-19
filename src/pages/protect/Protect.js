@@ -1,9 +1,10 @@
 import React from "react";
 import "./protect.css";
 import { Card, Button } from "react-bootstrap";
+import Rating from "react-rating";
 const Protect = (props) => {
   console.log(props);
-  const { detail, text, facility, info, name, price, extra } = props.protect;
+  const { detail, text, facility, info, name, price, rating } = props.protect;
   return (
     <div>
       <Card className="protect-card">
@@ -26,6 +27,15 @@ const Protect = (props) => {
             <i className="fas fa-hand-point-right icons"></i>
             {detail}
           </p>
+          <div className="rate">
+            <p>Avg. Rate</p>
+            <Rating
+              emptySymbol="far fa-star rating-icons"
+              fullSymbol="fas fa-star rating-icons"
+              initialRating={rating}
+              readonly
+            />
+          </div>
           <Button variant="info" className="w-100">
             GET STARTED NOW
           </Button>

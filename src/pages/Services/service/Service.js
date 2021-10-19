@@ -10,7 +10,7 @@ const Service = (props) => {
       <Card className="card-cont-service">
         <Card.Img className="card-img-service" variant="top" src={image} />
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
+          <Card.Title className="doctor-name">{name}</Card.Title>
           <Card.Text className="text-muted">{info}</Card.Text>
           <Link to="/more">
             <Button className="w-100" variant="info">

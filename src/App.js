@@ -14,11 +14,13 @@ import "slick-carousel/slick/slick-theme.css";
 import Protects from "./pages/protect/Protects";
 import ServiceDetail from "./pages/Services/service/serviceDetail/ServiceDetail";
 import NotFound from "./pages/notFound/NotFound";
+import TopMenu from "./pages/MenuBar/TopMenu";
 function App() {
   return (
     <div>
       <AuthProvider>
         <Router>
+          <TopMenu></TopMenu>
           <MenuBar></MenuBar>
           <SlideBanner></SlideBanner>
 

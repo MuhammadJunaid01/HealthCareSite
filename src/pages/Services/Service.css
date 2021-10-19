@@ -12,9 +12,16 @@
   margin-left: 5px;
   border: 1px solid blue;
   margin: 10px 5px;
+  position: absolute;
+  top: -49px;
+  left: 75px;
+}
+.doctor-name {
+  margin-top: 37px;
+  text-align: center;
 }
 .card-cont-service {
-  /* padding: 15px; */
+  margin-top: 30px;
 }
 .card-cont-service:hover {
   background-color: gainsboro;
@@ -23,7 +30,7 @@
 
 @media (min-width: 305px) and (max-width: 660px) {
   .service {
-    padding: 4px;
+    padding: 0px;
   }
   .service {
     margin: 17px 0px;

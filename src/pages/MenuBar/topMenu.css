@@ -1,0 +1,20 @@
+.address-icon {
+  margin-right: 10px;
+}
+.topmenuBar {
+  background-color: gainsboro;
+  padding: 2px;
+}
+.top-Menucont {
+  display: flex;
+  justify-content: space-between;
+}
+.topmenuIcons i {
+  margin: 0px 10px;
+}
+
+@media (min-width: 305px) and (max-width: 660px) {
+  .top-Menucont {
+    display: block;
+  }
+}

@@ -6,7 +6,11 @@ import useHooks from "./../../hooks/useHooks";
 import UseAuth from "./../../hooks/useAuth/UseAuth";
 
 const Login = () => {
-  const { GoogleSign, error, LoginWithEmail, Email, Password } = UseAuth();
+  const [
+    { GoogleSign, error, LoginWithEmail, Email, Password },
+    storeData,
+    setStoreData,
+  ] = UseAuth();
   return (
     <div className="login-form">
       <Container>

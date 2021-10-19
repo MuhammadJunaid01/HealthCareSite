@@ -4,10 +4,11 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import UseAuth from "../../hooks/useAuth/UseAuth";
 const MenuBar = () => {
-  const { user, Logdout } = UseAuth();
+  const [{ user, Logdout }] = UseAuth();
+  console.log(user);
   return (
     <div>
-      <Navbar bg="light" expand="lg" fixed="top">
+      <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="#">REDCRESENT HOSPITAL</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />

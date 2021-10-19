@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer-container">
       <Container>
         <Row>
-          <Col lg={4} sm={12}>
+          <Col lg={4} md={12} sm={12}>
             <div className="footerInfo-detail">
               <div className="footer-info">
                 <div className="footerInfo-icon me-3">
@@ -34,7 +34,41 @@ const Footer = () => {
               </div>
             </div>
           </Col>
+          <Col lg={4} md={12} sm={12}>
+            <div className="menu-detail">
+              <h4 className="text-center">DEPARTMENTS</h4>
+              <Button variant="success" className="details-btn">
+                Psychiatry <i className="fas fa-caret-right detail-right"></i>
+              </Button>
+              <br />
+              <Button variant="info" className="details-btn">
+                Opthalmology <i className="fas fa-caret-right detail-right"></i>
+              </Button>
+              <br />
+              <Button variant="warning" className="details-btn">
+                Cardiology <i className="fas fa-caret-right detail-right"></i>
+              </Button>
+              <br />
+              <Button variant="danger" className="details-btn">
+                Psychiatry <i className="fas fa-caret-right detail-right"></i>
+              </Button>
+              <br />
+              <Button variant="primary" className="details-btn">
+                Immumnology <i className="fas fa-caret-right detail-right"></i>
+              </Button>
+              <br />
+              <Button variant="dark" className="details-btn">
+                Hematology <i className="fas fa-caret-right detail-right"></i>
+              </Button>
+            </div>
+          </Col>
         </Row>
+        <div className="copy text-center mt-3">
+          <p>
+            Allright reserved<i className="far fa-copyright"></i> By{" "}
+            <i>Muhammad Junaid</i>
+          </p>
+        </div>
       </Container>
     </div>
   );

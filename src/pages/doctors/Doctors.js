@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
+import UseAuth from "../../hooks/useAuth/UseAuth";
 import Doctor from "./Doctor";
 import "./doctor.css";
 const Doctors = () => {
   const [doctors, setDoctors] = useState([]);
+  const [
+    { GoogleSign, error, LoginWithEmail, Email, Password },
+    storeData,
+    setStoreData,
+  ] = UseAuth();
   useEffect(() => {
     fetch("./doctor.json")
       .then((res) => res.json())
-      .then((data) => setDoctors(data));
+      .then((data) => {
+        setStoreData(data);
+        setDoctors(data);
+      });
   }, []);
 
   return (

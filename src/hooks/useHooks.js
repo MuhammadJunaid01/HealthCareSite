@@ -8,7 +8,7 @@ import {
   createUserWithEmailAndPassword,
 } from "firebase/auth";
 import FirebaseAuthentication from "./../Firebase/firebaseinit/useFirebase";
-import { useHistory, useLocation } from "react-router";
+
 FirebaseAuthentication();
 const useHooks = () => {
   const [user, setUser] = useState({});
@@ -28,13 +28,18 @@ const useHooks = () => {
       })
       .catch((error) => {
         const errorCode = error.code;
+        console.log(errorCode);
         const errorMessage = error.message;
         setError(errorMessage);
 
-        const email = error.email;
+        const emailError = error.email;
+        console.log(emailError);
         const credential = GoogleAuthProvider.credentialFromError(error);
-        // ...
+        console.log(credential);
+
+        // ..clg.
       });
+    console.log("hello user", user);
   };
   useEffect(() => {
     onAuthStateChanged(auth, (LoggedUser) => {
@@ -42,7 +47,7 @@ const useHooks = () => {
         setUser(LoggedUser);
       }
     });
-  }, []);
+  }, [auth]);
   const Logdout = () => {
     signOut(auth)
       .then(() => {
@@ -70,6 +75,7 @@ const useHooks = () => {
       })
       .catch((error) => {
         const errorCode = error.code;
+        console.log(errorCode);
         const errorMessage = error.message;
         setError(errorMessage);
         // ..

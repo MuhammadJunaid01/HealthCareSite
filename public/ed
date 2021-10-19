@@ -1,10 +1,2 @@
-https://ibb.co/M14WJsG
-https://ibb.co/ZMSwrnk
-https://ibb.co/GRj8bFb
-https://ibb.co/LRLkQCZ
-https://ibb.co/mcRFRXV
-https://ibb.co/3BZzM83
-https://ibb.co/zRCmb2N
-https://ibb.co/MVdkG5P
-https://ibb.co/Zm8s4PR
-https://ibb.co/RynPB6t
+
+const foundServices = services.filter(service => service.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1);

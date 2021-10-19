@@ -72,7 +72,7 @@ const useHooks = () => {
   const handleName = (e) => {
     setName(e.target.value);
   };
-  const SetName = () => {
+  const UserName = () => {
     updateProfile(auth.currentUser, { displayName: name }).then((res) => {});
   };
   const SignUpWithEmail = (e) => {
@@ -85,7 +85,7 @@ const useHooks = () => {
         // Signed in
         const CurrentEmailLogUser = userCredential.user;
         setUser(CurrentEmailLogUser);
-        setName();
+        UserName();
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -101,21 +101,21 @@ const useHooks = () => {
   const RegesPassword = (e) => {
     setRegestrationPassword(e.target.value);
   };
-  // const regestRation = (e) => {
-  //   e.preventDefault();
-  //   (auth, RegesEmail, RegesPassword)
-  //     .then((userCredential) => {
-  //       // Signed in
-  //       const UserPerson = userCredential.user;
-  //       setUser(UserPerson);
-  //       console.log("usernew", UserPerson);
-  //     })
-  //     .catch((error) => {
-  //       const errorCode = error.code;
-  //       const errorMessage = error.message;
-  //       setError(errorMessage);
-  //     });
-  // };
+  const LoginEmail = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, RegesEmail, RegesPassword)
+      .then((userCredential) => {
+        // Signed in
+        const UserPerson = userCredential.user;
+        setUser(UserPerson);
+        console.log("usernew", UserPerson);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        setError(errorMessage);
+      });
+  };
   return {
     user,
     GoogleSign,
@@ -127,6 +127,7 @@ const useHooks = () => {
     RegesPassword,
     Password,
     handleName,
+    LoginEmail,
   };
 };
 

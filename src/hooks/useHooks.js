@@ -6,6 +6,8 @@ import {
   onAuthStateChanged,
   signOut,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
 } from "firebase/auth";
 import FirebaseAuthentication from "./../Firebase/firebaseinit/useFirebase";
 
@@ -14,9 +16,14 @@ const useHooks = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
   const [email, setEmail] = useState("");
+  const [regestrationEmail, setRegestrationEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [regestrationPassword, setRegestrationPassword] = useState("");
   const GoogleProvider = new GoogleAuthProvider();
   const auth = getAuth();
+  console.log(regestrationPassword);
+  console.log(regestrationEmail);
   const GoogleSign = () => {
     signInWithPopup(auth, GoogleProvider)
       .then((result) => {
@@ -62,7 +69,13 @@ const useHooks = () => {
   const Password = (e) => {
     setPassword(e.target.value);
   };
-  const LoginWithEmail = (e) => {
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+  const SetName = () => {
+    updateProfile(auth.currentUser, { displayName: name }).then((res) => {});
+  };
+  const SignUpWithEmail = (e) => {
     e.preventDefault();
     if (email.length < 6) {
       return;
@@ -72,6 +85,7 @@ const useHooks = () => {
         // Signed in
         const CurrentEmailLogUser = userCredential.user;
         setUser(CurrentEmailLogUser);
+        setName();
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -81,7 +95,39 @@ const useHooks = () => {
         // ..
       });
   };
-  return { user, GoogleSign, error, Logdout, LoginWithEmail, Email, Password };
+  const RegesEmail = (e) => {
+    setRegestrationEmail(e.target.value);
+  };
+  const RegesPassword = (e) => {
+    setRegestrationPassword(e.target.value);
+  };
+  // const regestRation = (e) => {
+  //   e.preventDefault();
+  //   (auth, RegesEmail, RegesPassword)
+  //     .then((userCredential) => {
+  //       // Signed in
+  //       const UserPerson = userCredential.user;
+  //       setUser(UserPerson);
+  //       console.log("usernew", UserPerson);
+  //     })
+  //     .catch((error) => {
+  //       const errorCode = error.code;
+  //       const errorMessage = error.message;
+  //       setError(errorMessage);
+  //     });
+  // };
+  return {
+    user,
+    GoogleSign,
+    error,
+    Logdout,
+    SignUpWithEmail,
+    Email,
+    RegesEmail,
+    RegesPassword,
+    Password,
+    handleName,
+  };
 };
 
 export default useHooks;

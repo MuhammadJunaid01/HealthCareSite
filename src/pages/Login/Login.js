@@ -4,17 +4,18 @@ import { Container, Form, Button } from "react-bootstrap";
 import "./Login.css";
 import useHooks from "./../../hooks/useHooks";
 import UseAuth from "./../../hooks/useAuth/UseAuth";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [
-    { GoogleSign, error, LoginWithEmail, Email, Password },
+    { GoogleSign, error, SignUpWithEmail, Email, Password, handleName },
     storeData,
     setStoreData,
   ] = UseAuth();
   return (
     <div className="login-form">
       <Container>
-        <h3>Please! Login!!!</h3>
+        <h3>Please! Regester!!!</h3>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -37,11 +38,23 @@ const Login = () => {
               placeholder="Password"
               required
             />
+            <Form.Group controlId="validationCustom02" />
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              onBlur={handleName}
+              required
+              type="text"
+              placeholder="Name"
+            />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
+            <Link to="register">are you regester?</Link>
           </Form.Group>
-          <Button onClick={LoginWithEmail} variant="primary" type="submit">
+          <Form.Group controlId="formFileMultiple" className="mb-3">
+            <Form.Label>Multiple files input example</Form.Label>
+            <Form.Control type="file" multiple />
+          </Form.Group>
+          <Button onClick={SignUpWithEmail} variant="primary" type="submit">
             Submit
           </Button>
         </Form>

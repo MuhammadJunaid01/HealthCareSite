@@ -15,8 +15,6 @@ const SlideBanner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h1 className="health">Your Health</h1>
-            <h5 className="priority">is Our Priority</h5>
             <div className="mainBtn-cont">
               <Button className="banner-btn">Book Apoinment</Button>
               <Button className="banner-btn">Our Services</Button>
@@ -31,8 +29,6 @@ const SlideBanner = () => {
           />
 
           <Carousel.Caption>
-            <h1 className="health">Your Health</h1>
-            <h5 className="priority">is Our Priority</h5>
             <div className="mainBtn-cont">
               <Button className="banner-btn">Book Apoinment</Button>
               <Button className="banner-btn">Our Services</Button>
@@ -47,8 +43,6 @@ const SlideBanner = () => {
           />
 
           <Carousel.Caption>
-            <h1 className="health">Your Health</h1>
-            <h5 className="priority">is Our Priority</h5>
             <div className="mainBtn-cont">
               <Button className="banner-btn">Book Apoinment</Button>
               <Button className="banner-btn">Our Services</Button>

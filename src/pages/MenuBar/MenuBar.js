@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import UseAuth from "../../hooks/useAuth/UseAuth";
 const MenuBar = () => {
   const [{ user, Logdout }] = UseAuth();
-  console.log(user);
+  // console.log(object);
   return (
     <div>
       <Navbar bg="light" expand="lg">

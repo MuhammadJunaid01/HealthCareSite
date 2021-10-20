@@ -10,10 +10,12 @@ import {
   updateProfile,
 } from "firebase/auth";
 import FirebaseAuthentication from "./../Firebase/firebaseinit/useFirebase";
+import { useHistory, useLocation } from "react-router";
 
 FirebaseAuthentication();
 const useHooks = () => {
   const [user, setUser] = useState({});
+  const [oldUser, setOldUser] = useState({});
   const [error, setError] = useState("");
   const [email, setEmail] = useState("");
   const [regestrationEmail, setRegestrationEmail] = useState("");
@@ -22,31 +24,9 @@ const useHooks = () => {
   const [regestrationPassword, setRegestrationPassword] = useState("");
   const GoogleProvider = new GoogleAuthProvider();
   const auth = getAuth();
-  console.log(regestrationPassword);
-  console.log(regestrationEmail);
+
   const GoogleSign = () => {
-    signInWithPopup(auth, GoogleProvider)
-      .then((result) => {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        const currentUser = result.user;
-        setUser(currentUser);
-        // history.push();
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        console.log(errorCode);
-        const errorMessage = error.message;
-        setError(errorMessage);
-
-        const emailError = error.email;
-        console.log(emailError);
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        console.log(credential);
-
-        // ..clg.
-      });
-    console.log("hello user", user);
+    return signInWithPopup(auth, GoogleProvider);
   };
   useEffect(() => {
     onAuthStateChanged(auth, (LoggedUser) => {
@@ -75,7 +55,7 @@ const useHooks = () => {
   const UserName = () => {
     updateProfile(auth.currentUser, { displayName: name }).then((res) => {});
   };
-  const SignUpWithEmail = (e) => {
+  const RegesterNewUser = (e) => {
     e.preventDefault();
     if (email.length < 6) {
       return;
@@ -107,8 +87,9 @@ const useHooks = () => {
       .then((userCredential) => {
         // Signed in
         const UserPerson = userCredential.user;
-        setUser(UserPerson);
+        // setOldUser(UserPerson);
         console.log("usernew", UserPerson);
+        console.log("kkkkkkkkkkkkkkkkkkkkkkkkkk");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -121,13 +102,14 @@ const useHooks = () => {
     GoogleSign,
     error,
     Logdout,
-    SignUpWithEmail,
+    RegesterNewUser,
     Email,
     RegesEmail,
     RegesPassword,
     Password,
     handleName,
     LoginEmail,
+    oldUser,
   };
 };
 

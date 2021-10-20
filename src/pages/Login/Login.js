@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
+import { useHistory, useLocation } from "react-router";
 
 import "./Login.css";
 import useHooks from "./../../hooks/useHooks";
@@ -8,10 +9,46 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   const [
-    { GoogleSign, error, SignUpWithEmail, Email, Password, handleName },
+    {
+      GoogleSign,
+      error,
+      RegesterNewUser,
+      oldUser,
+      Email,
+      Password,
+      handleName,
+    },
     storeData,
     setStoreData,
   ] = UseAuth();
+  const [errorHandle, setErrorHandle] = useState("");
+
+  console.log(oldUser);
+  const location = useLocation();
+  const history = useHistory();
+  const redirectUrl = location?.state?.from || "home";
+  const handleGoolesign = () => {
+    GoogleSign()
+      .then((result) => {
+        // const credential = GoogleAuthProvider.credentialFromResult(result);
+        // const token = credential.accessToken;
+        // const currentUser = result.user;
+        // setUser(currentUser);
+        history.push(redirectUrl);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        console.log(errorCode);
+        const errorMessage = error.message;
+        setErrorHandle(errorMessage);
+
+        const emailError = error.email;
+        console.log(emailError);
+
+        // ..clg.
+      });
+    // console.log("hello user", user);
+  };
   return (
     <div className="login-form">
       <Container>
@@ -48,26 +85,26 @@ const Login = () => {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Link to="register">are you regester?</Link>
+            <Link to="register">allready regesterd?</Link>
           </Form.Group>
           <Form.Group controlId="formFileMultiple" className="mb-3">
             <Form.Label>Multiple files input example</Form.Label>
             <Form.Control type="file" multiple />
           </Form.Group>
-          <Button onClick={SignUpWithEmail} variant="primary" type="submit">
+          <Button onClick={RegesterNewUser} variant="primary" type="submit">
             Submit
           </Button>
         </Form>
         <div className="google-login">
           <h2>----OR----</h2>
           <div className="google">
-            <Button onClick={GoogleSign} variant="warning">
+            <Button onClick={handleGoolesign} variant="warning">
               <span>
                 <i className="fab fa-google"></i>
               </span>
               Login Google
             </Button>
-            <p>{error}</p>
+            <p>{errorHandle}</p>
           </div>
         </div>
       </Container>

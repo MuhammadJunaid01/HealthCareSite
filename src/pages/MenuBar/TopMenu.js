@@ -6,7 +6,7 @@ import "./topMenu.css";
 import UseAuth from "./../../hooks/useAuth/UseAuth";
 const TopMenu = () => {
   const [{ user }] = UseAuth();
-  console.log(user);
+  // console.log(user);
   return (
     <div className="topmenuBar">
       <>

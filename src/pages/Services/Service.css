@@ -10,7 +10,7 @@
   width: 80px;
   border-radius: 50%;
   margin-left: 5px;
-  border: 1px solid blue;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin: 10px 5px;
   position: absolute;
   top: -49px;

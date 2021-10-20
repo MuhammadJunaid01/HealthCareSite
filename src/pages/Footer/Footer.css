@@ -19,6 +19,19 @@
 .footerI-contuctnfo {
   padding: 20px;
 }
+.menu-detail {
+  text-align: center;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 20px;
+  background-color: rgba(240, 248, 255, 0.281);
+  color: black;
+  border-radius: 10px;
+  height: 326px;
+}
+.para {
+  border: 1px solid black;
+  border-radius: 20px;
+}
 .footerI-contuctnfo i {
   font-size: 30px;
   margin-right: 7px;
@@ -62,12 +75,33 @@
   color: white;
   margin-left: 6px;
 }
-
+.footerInfo-detail {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 10px;
+  background-color: rgba(240, 248, 255, 0.281);
+  height: 326px;
+  border-radius: 10px;
+}
+.subcribe {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 10px;
+  background-color: rgba(240, 248, 255, 0.281);
+  height: 326px;
+  border-radius: 10px;
+}
+.sbs-btn {
+  width: 164px;
+  margin-left: 0 auto;
+  margin-left: 89px;
+}
 @media (min-width: 305px) and (max-width: 660px) {
   .footer-info {
     display: block;
     padding: 0px;
     border: none;
+  }
+  .footerInfo-detail {
+    height: 360px;
   }
   .footer-container {
     padding: 3px;
@@ -102,8 +136,9 @@
     margin-left: 57px;
   }
   .text {
-    /* text-align: center; */
+    text-align: center;
     width: 100%;
+    /* margin-left: 19px; */
   }
   .contuct-link {
     display: block;
@@ -121,5 +156,8 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+  }
+  .sbs-btn {
+    margin-left: 0px;
   }
 }

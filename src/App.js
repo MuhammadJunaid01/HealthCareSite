@@ -16,6 +16,7 @@ import ServiceDetail from "./pages/Services/service/serviceDetail/ServiceDetail"
 import NotFound from "./pages/notFound/NotFound";
 import TopMenu from "./pages/MenuBar/TopMenu";
 import Regester from "./pages/regester/Regester";
+import Addservice from "./pages/addservice/Addservice";
 function App() {
   return (
     <div>
@@ -49,6 +50,9 @@ function App() {
             </Route>
             <Route exat path="/register">
               <Regester></Regester>
+            </Route>
+            <Route path="/addservice">
+              <Addservice></Addservice>
             </Route>
             <Route exact path="*">
               <NotFound></NotFound>

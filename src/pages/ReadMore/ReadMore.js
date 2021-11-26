@@ -29,7 +29,7 @@ const ReadMore = () => {
       <Container>
         {/* <h1>hello this read more:</h1> */}
         <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={detailResult.image} />
+          <Card.Img variant="top" src={detailResult?.image} />
           <Card.Body>
             <Card.Title>{detailResult.name}</Card.Title>
             <Card.Text>{detailResult.info}</Card.Text>
